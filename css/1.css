@@ -32,6 +32,7 @@ body{
 .topleftbox{
     display: flex;
     width: 20%;
+    background-color: red;
 }
 .logo{
     width: 40px;
@@ -69,6 +70,7 @@ body{
     align-items: center;
     margin:0px 10px;
     width: 55%;
+    background-color: blue;
 }
 .topmiddlebox .home-icon{
     padding-top: 16px;
@@ -106,6 +108,7 @@ body{
 .toprightbox{
     width:25%;
     display: flex;
+    background-color: red;
 }
 .toprightbox-profile{
     display: flex;
@@ -228,6 +231,78 @@ body{
 .leftbottomtwo:hover{
     background-color: var(--semi-dark-light);
 }
+.mainbox{
+    width : 55%;
+    margin : 0px 10px;
+}
+.myday{
+    display: flex;
+    justify-content: space-between;
+    margin : 10px 20px 10px 10px;
+}
+.mydayphoto{
+    width : 20%;
+    height : 200px;
+    border-radius : 15px;
+    margin : 0px 10px 0px 0px;
+}
+.mydayicon{
+    display : flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    background-image: url("../photo/sly\ \(6\).jpg") !important;
+    background-size: cover;
+}
+.mydayicon i{
+    font-size: 40px;
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    margin : auto;
+    position : relative;
+    top : 60px;
+}
+.mydayicon p{
+    text-align: center !important;
+}
+.myday p{
+    color : var(--text);
+    padding-bottom: 10px;
+    font-weight : bold;
+}
+.mydayphoto img{
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    border : 5px solid var(--primary);
+    position : relative;
+    left : 20px;
+    bottom : 110px;
+
+}
+.mydayphoto{
+    display : flex;
+    flex-direction: column;
+    justify-content: end;
+    background-image: url("../photo/sly\ \(7\).jpg");
+    background-size: cover;
+}
+.mydayphoto p{
+    text-align: left;
+    padding-left : 10px;
+}
+.mydayphoto:last-child i{
+    font-size: 40px;
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    position : relative;
+    left : 115px;
+    background-color: var(--semi-dark-light);
+    color : var(--text)
+}
+
 
 
 
