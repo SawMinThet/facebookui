@@ -141,3 +141,93 @@ body{
 .toprightbox-button i:hover{
     background-color: var(--semi-dark-light);
 }
+.middle{
+    display: flex;
+}
+.leftbox{
+    width:20%;
+    overflow-y: scroll;
+    padding-left: 15px;
+    padding-top : 10px;
+}
+.lefttopone{
+    display: flex;
+    width : 100%;
+    justify-content: left;
+    align-items: center;
+    margin : 10px 0px;
+}
+.lefttopone img{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+.middle p{
+    color : var(--text);
+    padding-left: 10px;
+}
+.lefttopone:hover{
+    background-color: var(--semi-dark-light);
+    border-radius: 15px;
+}
+.lefttoptwo{
+    display: flex;
+    width:100%;
+    justify-content: left;
+    align-items: center;
+    margin : 10px 0px;
+}
+.lefttoptwo i{
+    width : 40px;
+    height : 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.lefttoptwo:hover{
+    background-color: var(--semi-dark-light);
+    border-radius: 15px;
+}
+.leftbottomone{
+    display: flex;
+    justify-content: space-between;
+    padding-top : 5px;
+}
+.leftbottomone h3{
+    padding : 10px 0px;
+}
+.leftbottomone .edit{
+    color : var(--primary);
+    font-weight: 100;
+    padding-right : 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+}
+.leftbottomone .edit:hover{
+    background-color: var(--semi-dark-light);
+}
+.leftbottomtwo{
+    display : flex;
+    justify-content: left;
+    align-items: center;
+    margin : 10px 0px;
+    border-radius: 15px;
+}
+.leftbottomtwo img{
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+
+}
+.leftbottomtwo i{
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.leftbottomtwo:hover{
+    background-color: var(--semi-dark-light);
+}
+
+
+
