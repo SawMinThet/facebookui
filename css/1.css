@@ -8,6 +8,8 @@
     --semi-dark-thinlight : #2d3033;
     --text : #c9cbcf;
     --noti-danger : #f02849;
+    --pass : #45bd62;
+    --warning : #f7b928;
 }
 *{
     padding : 0px;
@@ -32,7 +34,6 @@ body{
 .topleftbox{
     display: flex;
     width: 20%;
-    background-color: red;
 }
 .logo{
     width: 40px;
@@ -70,7 +71,6 @@ body{
     align-items: center;
     margin:0px 10px;
     width: 55%;
-    background-color: blue;
 }
 .topmiddlebox .home-icon{
     padding-top: 16px;
@@ -108,7 +108,6 @@ body{
 .toprightbox{
     width:25%;
     display: flex;
-    background-color: red;
 }
 .toprightbox-profile{
     display: flex;
@@ -147,9 +146,12 @@ body{
 .middle{
     display: flex;
 }
+.middle .col{
+    height : 100vh;
+    overflow-y: scroll;
+}
 .leftbox{
     width:20%;
-    overflow-y: scroll;
     padding-left: 15px;
     padding-top : 10px;
 }
@@ -242,9 +244,10 @@ body{
 }
 .mydayphoto{
     width : 20%;
-    height : 200px;
+    height : 30vh;
     border-radius : 15px;
     margin : 0px 10px 0px 0px;
+    position : relative;
 }
 .mydayicon{
     display : flex;
@@ -252,6 +255,7 @@ body{
     justify-content:flex-end;
     background-image: url("../photo/sly\ \(6\).jpg") !important;
     background-size: cover;
+    position : relative;
 }
 .mydayicon i{
     font-size: 40px;
@@ -260,8 +264,9 @@ body{
     border-radius: 50%;
     background-color: var(--primary);
     margin : auto;
-    position : relative;
-    top : 60px;
+    position : absolute;
+    bottom : 30px;
+    left :30%;
 }
 .mydayicon p{
     text-align: center !important;
@@ -276,9 +281,9 @@ body{
     height : 50px;
     border-radius: 50%;
     border : 5px solid var(--primary);
-    position : relative;
-    left : 20px;
-    bottom : 110px;
+    position : absolute;
+    left : 15px;
+    top : 15px;
 
 }
 .mydayphoto{
@@ -297,11 +302,322 @@ body{
     width : 40px;
     height : 40px;
     border-radius: 50%;
-    position : relative;
-    left : 115px;
+    position : absolute;
+    right : -20px;
+    top : 40%;
     background-color: var(--semi-dark-light);
-    color : var(--text)
+    color : var(--text);
 }
+.yourmind{
+    margin: 20px 5vw;
+    background-color: var(--semi-dark-thinlight);
+    padding : 15px;
+    border-radius: 15px;
+}
+.yourmindtop{
+    display: flex;
+    padding-bottom : 10px;
+}
+.yourmindtop img{
+    width : 50px;
+    height : 50px;
+    border-radius: 50%;
+    margin-right : 10px;
+}
+.yourmindtop .yourmindtopinput{
+    width : 90%;
+    border-radius: 50px;
+    background-color: var(--semi-dark-light);
+    padding-left: 20px;
+    color : var(--text);
+    border : none;
+
+}
+.yourmindbottom{
+    display: flex;
+    padding-top : 10px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right:5px;
+}
+.yourmindbottomone{
+    display: flex;
+    margin : 0px 10px;
+}
+.yourmindbottomone:first-child i{
+    color : var(--noti-danger);
+}
+.yourmindbottomone:last-child i{
+    color : var(--warning);
+}
+.yourmindbottomone:nth-child(2) i{
+    color : var(--pass);
+}
+.room{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5vw;
+    background-color: var(--semi-dark-thinlight);
+    padding : 10px;
+    border-radius: 15px;
+    position : relative;
+
+}
+.roomone{
+    display: flex;
+    align-items: center;
+    border : 1px solid var(--primary);
+    border-radius: 40px;
+    padding:0 20px 0 20px;
+    margin-right: 20px;
+    margin-left: 5px;
+}
+.roomone i{
+    color : rgb(165, 64, 165);
+}
+.roomone p{
+    color : var(--primary);
+}
+.room img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.room i:last-child{
+    font-size: 50px;
+    border-radius: 50%;
+    position : absolute;
+    right : 30px;
+    bottom : 5px;
+    z-index: 2;
+    background-color: var(--semi-dark-thinlight);
+}
+.newsfeed{
+    margin: 20px 5vw;
+    background-color: var(--semi-dark-thinlight);
+    padding : 15px;
+    border-radius: 15px;
+}
+.newsfeedtop{
+    display: flex;
+    align-items: center;
+}
+.newsfeedtop img{
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+}
+.newsfeedtop-rbottom{
+    display: flex;
+    align-items: center;
+}
+.newsfeedtop-rbottom i{
+    margin-left: 5px;
+}
+.newsfeedtext{
+    margin-top: 10px;
+    text-align: justify;
+}
+.newsfeedreact{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 10px 0px;
+}
+.newsfeedreact p{
+    margin-left : 10px;
+}
+.newsfeedreact i:first-child{
+    color : var(--warning);
+}
+.newsfeedreact i:nth-child(2){
+    color : var(--noti-danger);
+}
+.newsfeedbutton{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10%;
+}
+.newsfeedbutton-left{
+    display: flex;
+    margin : 10px 0px;
+    align-items: center;
+}
+.newsfeedbutton-left:first-child i{
+    color : var(--noti-danger);
+}
+.newsfeedbottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.newsfeedbottom img{
+    width : 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top : 10px;
+}
+.newsfeedbottom-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 90%;
+    background-color: var(--semi-dark-light);
+    padding : 10px;
+    margin-top : 10px;
+    border-radius: 40px;
+}
+.newsfeedbottom-icon{
+    display: flex;
+    justify-content: end;
+}
+.newsfeedbottom i{
+    padding : 0px 5px;
+}
+.newsfeedbottom-right input{
+    width : 70%;
+    background-color: var(--semi-dark-light);
+    border : none;
+    color : var(--text);
+}
+.rightbox{
+    width : 25%;
+}
+.rightbox-top{
+    display: flex;
+    flex-direction: column;
+    margin:10px 0px;
+    border-radius: 15px;
+    background-color: var(--semi-dark-thinlight);
+}
+.rightbox-top-up{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 20px 20px 0px 20px;
+    position: relative;
+}
+.rightbox-top-up p{
+    position: absolute;
+    left : 40px;
+}
+.rightbox-top-up span{
+    position:absolute;
+    right : 10px;
+    text-align: center;
+    line-height: 30px;
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+}
+.rightbox-top-up span:hover{
+    background-color: var(--semi-dark-light);
+}
+.rightbox-top-down{
+    display: flex;
+    justify-content: center;
+    padding : 10px;
+    margin : 10px;
+    border-radius: 15px;
+}
+.rightbox-top-down:hover{
+    background-color: var(--semi-dark-light);
+}
+.rightbox-top-down .image{
+    width : 40px;
+    height : 40px;
+    border-radius: 50%;
+    margin : 5px;
+}
+.rightbox-top-downright{
+    display: flex;
+    flex-direction: column;
+}
+.rightbox-top-downone{
+    display: flex;
+    justify-content:space-between;
+    margin : 5px 0px;
+}
+.rightbox-top-downtwo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin : 5px;
+}
+.rightbox-top-downtwo img{
+    width : 20px;
+    height : 20px;
+    border-radius: 50%;
+}
+.rightbox-top-down .inner{
+    width : 100%;
+    padding : 10px;
+    background-color: var(--primary);
+    margin : 5px;
+    border-radius: 15px;
+    text-align : center;
+}
+.rightmiddle{
+    margin : 10px 0px;
+}
+.rightmiddle p:first-child{
+    color : var(--text);
+    font-weight: bolder;
+}
+.card{
+    display: flex;
+    align-items: center;
+    padding : 10px;
+    border-radius: 15px;
+}
+.card:hover{
+    background-color: var(--semi-dark-thinlight);
+}
+.card img{
+    width : 40%;
+    height : 60px;
+    border-radius: 15px;
+}
+.cardtext{
+    margin-left : 10px;
+}
+.rightbottom{
+    width : 100%;
+}
+.pagehead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pagehead p{
+    padding : 20px 10px 10px 10px;
+    font-weight: bolder;
+}
+.pagehead p:last-child{
+    height :40px;
+    width :40px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 1px;
+}
+.pagehead p:last-child:hover{
+    background-color: var(--semi-dark-light);
+}
+.page{
+    border-radius: 15px;
+    display: flex;
+    padding : 10px;
+    align-items: center;
+}
+.page:hover{
+    background-color: var(--semi-dark-light);
+}
+.page img{
+    width : 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 
 
 
